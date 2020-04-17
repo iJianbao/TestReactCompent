@@ -10,7 +10,9 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
-        options: { presets: ["@babel/env"] }
+        options: {
+        	compact: true,,
+        	presets: ["@babel/env", "es2015", "react"] }
       },
       {
         test: /\.css$/,
